@@ -46,7 +46,14 @@ src folder will contains maily our react application code-- components,styles,sc
 
 these files can be process by webpack and then bundles files for our app.
 
+styling:
+--------
 
+1.inline using style attribute
+
+2.jsx using style attribute
+
+3.external using .css component
 
 
 
