@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Footer from "../footer/footerComp";
 import HeaderComp from "../header/headerComp";
-import main from "../main/mainComp";
+import Main from "../main/mainComp";
 
 class Home extends Component {
   render() {
@@ -15,7 +15,7 @@ class Home extends Component {
           }}
       >
         <HeaderComp />
-        <main />
+        <Main />
         <Footer />
       </div>
     );
