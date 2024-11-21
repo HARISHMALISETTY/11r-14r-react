@@ -1,63 +1,20 @@
-# 11r-14r-react
-react
+component?
 
-what is react..??
-
-react is a js library which is used to build single page application.
-
-why react..?
-
-key features of react:
-----------------------
-1.it will uses virtual dom.
-
-2.it follows component based architecture where we can reuse them.
-
-3.it will have jsx syntax..which is extension of js which allows to write html along with js.
-
-4.component contains states(mutable) and props(immutable).
-
-5.event handlings
-
-6.lifecycle methods.
-
-7.hooks
-
-nodemodules---> it will contains all dependency files
-
-package.json---> is the file contains all the meta information/configuration about the node_module dependencies.
-
-it is flexible, it will allow if the version is not exactly match.
-
-package-lock.json--->is the file contains few dependency's meta info where it expects the exact version to be install.
+in react component can be act as a building block for building react application
+which returns the jsx. and they can modular and reusable.
 
 
-whenever you want to install node_modules which are mentioned in package.json as dependenciew, then the command should be run is
+functional component and classbased component---just static content
 
-npm install.
-
-
-public folder will contains some static type of file that don't change and directly 
-
-served to the browser.
-
-src folder will contains maily our react application code-- components,styles,scripts.
-
-
-these files can be process by webpack and then bundles files for our app.
-
-styling:
---------
-
-1.inline using style attribute
-
-2.jsx using style attribute
-
-3.external using .css component
+functional components will have js function syntax
+they can return jsx directly
+they will use hooks additionally to manage the states.
+easy to write and read.
 
 
 
 
-
-
-
+class based components will have the es6 classes syntax
+they will use additionally render method to return jsx.
+they can manage states by its own with the help of lifecycle methods.
+little bit difficult to write.
