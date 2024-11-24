@@ -2,6 +2,7 @@ import { Component } from "react";
 import Footer from "../footer/footerComp";
 import HeaderComp from "../header/headerComp";
 import Main from "../main/mainComp";
+import Menu from "../menu/menu";
 
 class Home extends Component {
   render() {
@@ -14,9 +15,10 @@ class Home extends Component {
          //height: '100vh' // Set the height to 100% of the viewport height
           }}
       >
-        <HeaderComp />
+        {/* <HeaderComp />
         <Main />
-        <Footer />
+        <Footer /> */}
+        <Menu name="harish" city="hyd" gender="male"/>
       </div>
     );
   }

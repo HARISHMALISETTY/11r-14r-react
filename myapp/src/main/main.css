@@ -26,3 +26,12 @@
     padding: 45px;
     font-size: 20px;
   }
+
+  table,tr,td,th{
+    border: 5px solid;
+    border-collapse: collapse;
+    border-top-color: red;
+    border-bottom-color: aqua;
+    border-right-color: orange;
+    border-left-color: green;
+  }
