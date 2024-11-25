@@ -9,7 +9,7 @@ function HeaderComp() {
         <li>prices</li>
         <li>login</li>
         <li>signup</li>
-        <li>aboutus</li>
+        <li>aboutus-option</li>
       </ul>
     </div>
   );
