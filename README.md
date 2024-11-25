@@ -1,20 +1,9 @@
-component?
+props:
+------
+in react, props stands for properties which are used to pass from one component(parent) to other component(child) for reusing the component.
 
-in react component can be act as a building block for building react application
-which returns the jsx. and they can modular and reusable.
+we can access props in two ways:
 
+1.directly using props keyword as a parameter
+2.children props.-- this can be pass as a nested elements b/w the open tagged comp and closing tagged component.
 
-functional component and classbased component---just static content
-
-functional components will have js function syntax
-they can return jsx directly
-they will use hooks additionally to manage the states.
-easy to write and read.
-
-
-
-
-class based components will have the es6 classes syntax
-they will use additionally render method to return jsx.
-they can manage states by its own with the help of lifecycle methods.
-little bit difficult to write.

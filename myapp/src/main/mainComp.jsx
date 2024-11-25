@@ -208,83 +208,83 @@ const products = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
-// function Main() {
-//   return (
-//     <div
-//       style={{
-//         display: "flex",
-//         gap: "10px",
-//         backgroundColor: "aqua",
-//         flexWrap: "wrap",
-//         justifyContent: "center",
-//       }}
-//     >
-//       {products.map((a, b) => {
-//         return (
-//           <div
-//             style={{
-//               display: "flex",
-//               flexDirection: "column",
-//               width: "350px",
-//               backgroundColor: "orange",
-//               padding: "20px",
-//               borderRadius: "15px",
-//             }}
-//           >
-//             <img src={a.image} alt={a.title} style={{ height: "120px" }} />
-//             <h4>{a.title}</h4>
-//             <div
-//               style={{
-//                 display: "flex",
-//                 justifyContent: "space-around",
-//                 fontSize: "18px",
-//               }}
-//             >
-//               {" "}
-//               <p>{a.price}</p>
-//               <p>{a.rating.rate}</p>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// }
-
 function Main() {
   return (
-    <>
-      <table>
-        <thead>
-
-        <tr>
-          
-          <th>id</th>
-          <th>title</th>
-          <th>price</th>
-          <th>description</th>
-          <th>category</th>
-          <th>ratings</th>
-          <th>image</th>
-        </tr></thead>
-        <tbody>
-    {products.map((a,b)=>{return(
-      <tr>
-        <td>{a.id}</td>
-        <td>{a.title}</td>
-        <td>{a.price}</td>
-        <td>{a.description}</td>
-        <td>{a.category}</td>
-        <td>{a.rating.rate}</td>
-        <td><img src={a.image} alt={a.title}></img></td>
-      </tr>)
-    })}
-
-
-        </tbody>
-      </table>
-    </>
+    <div
+      style={{
+        display: "flex",
+        gap: "10px",
+        backgroundColor: "aqua",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}
+    >
+      {products.map((a, b) => {
+        return (
+          <div key={b}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "350px",
+              backgroundColor: "orange",
+              padding: "20px",
+              borderRadius: "15px",
+            }}
+          >
+            <img src={a.image} alt={a.title} style={{ height: "120px" }} />
+            <h4>{a.title}</h4>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                fontSize: "18px",
+              }}
+            >
+              {" "}
+              <p>{a.price}</p>
+              <p>{a.rating.rate}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
+
+// function Main() {
+//   return (
+//     <>
+//       <table>
+//         <thead>
+
+//         <tr>
+          
+//           <th>id</th>
+//           <th>title</th>
+//           <th>price</th>
+//           <th>description</th>
+//           <th>category</th>
+//           <th>ratings</th>
+//           <th>image</th>
+//         </tr></thead>
+//         <tbody>
+//     {products.map((a,b)=>{return(
+//       <tr key={b}>
+//         <td>{a.id}</td>
+//         <td>{a.title}</td>
+//         <td>{a.price}</td>
+//         <td>{a.description}</td>
+//         <td>{a.category}</td>
+//         <td>{a.rating.rate}</td>
+//         <td><img src={a.image} alt={a.title}></img></td>
+//       </tr>)
+//     })}
+
+
+//         </tbody>
+//       </table>
+//     </>
+//   );
+// }
 
 export default Main;
