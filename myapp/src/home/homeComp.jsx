@@ -234,7 +234,7 @@ class Home extends Component {
           return (
             <div key={b}>
             <ProfileCard
-             data={a}
+             title={a.title} img={a.image} desc={a.description} info={a.category}
             /></div>
           );
         })}
