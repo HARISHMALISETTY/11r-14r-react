@@ -1,4 +1,5 @@
 import "./main.css"
+import CondRend from "../uiContent/conditionalrendering/condRend";
 
 const products = [
   {
@@ -208,6 +209,8 @@ const products = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
+
+
 function Main() {
   return (
     <div
@@ -219,7 +222,7 @@ function Main() {
         justifyContent: "center",
       }}
     >
-      {products.map((a, b) => {
+      {/* {products.map((a, b) => {
         return (
           <div key={b}
             style={{
@@ -246,7 +249,10 @@ function Main() {
             </div>
           </div>
         );
-      })}
+      })} */}
+
+<CondRend/>
+      
     </div>
   );
 }
