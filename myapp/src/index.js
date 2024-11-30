@@ -10,7 +10,8 @@ import Accordian from './uiContent/bs-accordian/accordianComp';
 import Main from './main/mainComp';
 import Parent from './uiContent/Parentcomp/parentComp';
 import Counter from './uiContent/counter/counter';
-
+import Toggle from './uiContent/toggleSwitch/toggleSwitch';
+import SampleForm from './uiContent/sampleForm/sampleForm';
 const products = [
   {
     id: 1,
@@ -223,8 +224,11 @@ const products = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+<h1>hello</h1>
+    <SampleForm/>
+    {/* <Toggle/> */}
 
-    <Counter/>
+    {/* <Counter/> */}
     {/* <Main/> */}
 
     {/* <Parent login="admin"/> */}
