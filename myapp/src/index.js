@@ -12,6 +12,7 @@ import Parent from './uiContent/Parentcomp/parentComp';
 import Counter from './uiContent/counter/counter';
 import Toggle from './uiContent/toggleSwitch/toggleSwitch';
 import SampleForm from './uiContent/sampleForm/sampleForm';
+import Todo from "./uiContent/todo/index.js"
 const products = [
   {
     id: 1,
@@ -225,14 +226,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 <h1>hello</h1>
-    <SampleForm/>
+<Todo/>
+    {/* <SampleForm/> */}
     {/* <Toggle/> */}
 
     {/* <Counter/> */}
     {/* <Main/> */}
-
     {/* <Parent login="admin"/> */}
-
     {/* <App /> */}
     {/* <Sample/> */}
     {/* <Home/> */}
