@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProfileCard from "../profile/profileCard";
 import axios from "axios";
 
+
 export default class LifeCycle extends Component {
   constructor() {
     // console.log("constructing");
@@ -17,9 +18,7 @@ export default class LifeCycle extends Component {
     //     this.setState({ products: json });
     //   });
 
-    axios.get("https://fakestoreapi.com/products").then((res) => {
-      this.setState({ products: res.data });
-    });
+    axios.get("https://fakestoreapi.com/products").then((res)=>{this.setState({products:res.data})})
   }
 
   static getDerivedStateFromProps() {
@@ -40,14 +39,7 @@ export default class LifeCycle extends Component {
           }}
         >
           {this.state.products.map((a, b) => {
-            return (
-              <ProfileCard
-                img={a.image}
-                title={a.title}
-                desc={a.description}
-                info={a.category}
-              />
-            );
+            return <ProfileCard img={a.image} title={a.title} desc={a.description} info={a.category} />;
           })}
         </div>
       </div>

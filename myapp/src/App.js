@@ -5,7 +5,7 @@ import LifeCycle from './uiContent/lifeCycle';
 function App() {
   return (
     <div className="App">
-     <LifeCycle/>
+     <LifeCycle color="orange"/>
     </div>
   );
 }
