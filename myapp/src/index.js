@@ -225,15 +225,15 @@ const products = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<h1>hello</h1>
-<Todo/>
+
+{/* <Todo/> */}
     {/* <SampleForm/> */}
     {/* <Toggle/> */}
 
     {/* <Counter/> */}
     {/* <Main/> */}
     {/* <Parent login="admin"/> */}
-    {/* <App /> */}
+    <App />
     {/* <Sample/> */}
     {/* <Home/> */}
     {/* <Accordian title={products[0].title}  info={products[0].description}/>
