@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import ProfileCard from "../profile/profileCard";
+import ProfileCard from "../../profile/profileCard";
 import axios from "axios";
 
 
-export default class LifeCycle extends Component {
-  constructor() {
+export default class Mounting extends Component {
+  constructor(props) {
     // console.log("constructing");
-    super();
-    this.state = { products: [] };
+    super(props);
+    this.state = { products: [],color:"red" };
   }
 
   componentDidMount() {
@@ -21,15 +21,13 @@ export default class LifeCycle extends Component {
     axios.get("https://fakestoreapi.com/products").then((res)=>{this.setState({products:res.data})})
   }
 
-  static getDerivedStateFromProps() {
-    // console.log("statedderiving from props");
-    return null;
-  }
+  
 
   render() {
     // console.log("rendering");
     return (
       <div>
+        {/* <h1 style={{color:this.state.color}}>hello</h1> */}
         <div
           style={{
             display: "flex",

@@ -41,13 +41,13 @@ lifecycle:life cycle of components tells us how elements behaving from component
 to removal from dom
 
 1.mounting state
-    1.1.constructor:
+    1.1.constructor: ----important
             it is used to create and initialize the state in class component.
 
-    1.2 render:
+    1.2 render: ---important
             to insert the jsx  inside the dom,we actually need this method.
 
-    1.3 componentdidmount:
+    1.3 componentdidmount: ---important
             it is a method where we can perform the side effects.
 
             side effects:
@@ -56,7 +56,7 @@ to removal from dom
             3.timers trigger when page load
             4.event listenrs when page load
 
-    1.4 getderivedstatesfromprops
+    1.4 getderivedstatesfromprops -----optional
             it changes the state based on the props over the time.
 
             
@@ -65,6 +65,25 @@ to removal from dom
 
 
 2.updating state
+
+2.1 constructor---important
+2.2 render ----important
+2.2.1 getderivedstatefromprops ----optional
+2.3 componentdidupdate :--- important
+parameters will be prvsprops and prvsstate
+ when ever a component is updated, then this method will executes
+
+2.4 shouldcomponentupdate : ---optional
+parameters will be nextprops and nextstate
+it will decides whether a component should update or not.
+this method will returns boolen value.
+
+2.5 getsnapshotbeforeupdate: --optional
+parameters will be prvsprops and prvsstate
+
+it will contains the information of state before updating.
+
+
 3.unmounting state.
 
 
