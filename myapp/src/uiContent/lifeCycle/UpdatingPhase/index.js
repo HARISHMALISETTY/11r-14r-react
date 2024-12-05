@@ -4,10 +4,20 @@ import ProfileCard from "../../profile/profileCard";
 import Loader from "../../../utilities/loadSpinner";
 
 export default class UpdatingPhase extends Component {
-  constructor() {
-    super();
-    this.state = { count: 0, product: null };
+  constructor(props) {
+    super(props);
+    this.state = { count: 0, product: null,color:"green" };
   }
+
+  static getDerivedStateFromProps(props,state){
+
+    // console.log(props,"props");
+    // console.log(state,"state");
+
+    return {color:props.color};
+
+  }
+
 
   componentDidUpdate(prvsProps, prvsState) {
     if (prvsState.count !== this.state.count) {
@@ -39,12 +49,13 @@ export default class UpdatingPhase extends Component {
   decreement = () => {
     this.setState({ count: this.state.count - 1 });
   };
+
   render() {
     const { count, product } = this.state; // destructuring of variable from state object
     return (
       <div style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
         <div>
-          <h1>{count}</h1>
+          <h1 style={{color:this.state.color}}>{count}</h1>
           <button onClick={this.increement}>Next</button>
           <button onClick={this.decreement} disabled={count <= 0}>
             Previous

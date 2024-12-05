@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
      {/* <Mounting color="orange"/> */}
-     <UpdatingPhase/>
+     <UpdatingPhase color="yellow"/>
     </div>
   );
 }

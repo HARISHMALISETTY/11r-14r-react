@@ -37,8 +37,7 @@ earth
 browser/vdom
 
 
-lifecycle:life cycle of components tells us how elements behaving from components creation 
-to removal from dom
+lifecycle:life cycle of components tells us how elements behaving from components creation to removal from dom
 
 1.mounting state
     1.1.constructor: ----important
@@ -89,3 +88,8 @@ it will contains the information of state before updating.
 
 
 
+1.understand the code, then only
+
+2.copy the code, if it is useful then 
+
+3.use it
