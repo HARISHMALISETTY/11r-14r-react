@@ -86,10 +86,70 @@ it will contains the information of state before updating.
 3.unmounting state.
 
 
+DRAWBACKS OF CLASS COMPONENT IN REACT
+------------------------------------
+1.more complex in boiler plate of code.
+2.this keyword can be confusing
+3.need to use different lifecycles to handle tasks
+4.code cannot run from top to bottom,methods will invokes as per lifecycle.
+
+till 2018, we were suppose to use class approach
+
+after 2018, introduced functional approach and it been using mostly. from 16.8 version.
+
+hooks can be replace here to handle the lifecycle of a component.
+
+rules to be follow while using hooks:
+------------------------------------
+1.hooks always should be use in functional comp only.
+2.hooks always call at the top of the functional components and should import from react.
+3.hooks cannot be used in conditionals,cannot be used in the loops.
+
+examples for the hooks:
+-----------------------
+1.useState
+2.useEffect
+3.useRef
+4.useMemo
+5.useReducer
+6.useCallback
+7.useContext
+8.custom hooks
+
+hook can be replica for the constructor and state/setstate in class bases cmps.
+
+hook()
 
 
-1.understand the code, then only
+eg:useState()
 
-2.copy the code, if it is useful then 
+it can store/intialise with a num/string/boolean/array/obj/null.
 
-3.use it
+hook will returns always an array.
+
+syntax:
+-------
+[intialisevalue or currentstate,updatefunction]=useState(value with any data type)
+
+to update the currentstate, we have to use updatefunction.
+
+
+const[count,setCount]=useState(1)
+const[isSubscribe,setIssubscribe]=useState(true);
+const[products,setProducts]=useState([]);
+const[product,setProduct]=useState({})
+
+statelifting:
+-------------
+it is a technique in react where moving state from 
+child component to a parent component,lifting it up the
+component tree.
+
+
+benifits of state lifting:
+-------------------------
+1.shared state: multiple child components can 
+                access and update the shared state.
+                
+2.easier state management:parent component manages the state,
+                          reducing complexity in child components
