@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ButtonComp from "../buttonComp";
+import "./index.css"
 
 export default function CounterFc() {
   const [counter, setCounter] = useState(0);
@@ -20,7 +21,7 @@ export default function CounterFc() {
   };
   return (
     <div>
-      <h1>{counter}</h1>
+      <h1 className="hello">{counter}</h1>
       <div style={{display:"flex",justifyContent:"center",gap:"10px"}}>
         <ButtonComp
           onClick={() => {

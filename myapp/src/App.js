@@ -10,7 +10,7 @@ function App() {
      {/* <Mounting color="orange"/> */}
      {/* <UpdatingPhase color="yellow"/> */}
      {/* <FuncLifeCycle/> */}
-     <CounterFc/>
+     {/* <CounterFc/> */}
     </div>
   );
 }
