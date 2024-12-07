@@ -3,7 +3,7 @@ import ButtonComp from "../buttonComp";
 import "./index.css"
 
 export default function CounterFc() {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(" ");
   //   const increment=()=>{setCounter(counter+1)}
   //   const decrement=()=>{setCounter(counter-1)}
 
