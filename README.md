@@ -153,3 +153,50 @@ benifits of state lifting:
                 
 2.easier state management:parent component manages the state,
                           reducing complexity in child components
+
+
+
+
+1.virtual dom
+        a.it is a in memory-representation of original DOM.
+        b.whenever component renders, then virtual dom will creates/forms.
+        c.whenever any new updates occurs, then new virtual dom will forms, and 
+        after comparing it with old virtual dom. (diffing)
+        d.it identifies the exact changes b/w the two doms(old and new virtual dom)
+        e.react will analysis required changes to be done to the real dom and updates. this process can be called as reconcilation.
+2.pure component
+        whenever a component avoids unnecessary re-rendering and renders only if its state
+        updates, then it can be called as pure component.
+
+        unnecessary means,if there is no any change in state then it should not render.
+
+        in fc--we will use React.memo()
+        in cc-- we will import PureComponent instead of Component
+
+3.stateless and stateful component
+        A stateless component is a component that doesn't have its own state and simply renders 
+        with its props coming from the parent component.
+
+        a functional component can be called as a statless component, why because it doesn't have their own state and own lifecycle methods
+
+        A stateful component is a component that has its own state.it can receive props from its
+        parent and also can have its own internal state and changes over the time.
+
+        stateful components can be called as class components, why because they have their own state and own lifecycle methods.
+
+
+
+
+login-api 
+
+harish and paswd
+
+
+
+products--api using get by passing my token
+
+add to cart--api, quantity-2 add to cart, post by passing my token
+
+payment--api post by passing my token.
+
+
