@@ -200,3 +200,23 @@ add to cart--api, quantity-2 add to cart, post by passing my token
 payment--api post by passing my token.
 
 
+useeffect:
+----------
+it is a hook which manages a lifecycle of a component and handles/performs
+side effects in the component.
+
+1.useeffect hook with only one cbf and without a dependency array.
+
+syntax:
+--------
+
+1.useEffect(()=>{}) // it will makes to perform sideeffects in an infinite loop, 
+whenever a props or states changes.
+
+
+2.useEffect(()=>{},[])// it will behaves as a component didmount, executes only once when page loads // similar to componentdidmount
+
+
+3.useEffect(()=>{},[state])//it will executes whenever that dependent state is updated.
+// componentdidupdate
+

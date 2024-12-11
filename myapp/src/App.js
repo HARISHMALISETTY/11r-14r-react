@@ -6,8 +6,8 @@ import FuncLifeCycle from './uiContent/functionalComps/lifecyle';
 import CounterFc from './uiContent/functionalComps/counterFc';
 import FormComp from './uiContent/functionalComps/formEvents';
 import Counter from './uiContent/functionalComps/pureComponent/counter';
-import LoginForm
- from './uiContent/functionalComps/loginComp';
+import LoginForm from './uiContent/functionalComps/loginComp';
+import UseefctComp from './uiContent/functionalComps/useefct';
 function App() {
   return (
     <div className="App">
@@ -17,7 +17,8 @@ function App() {
      {/* <CounterFc/> */}
      {/* <Counter/> */}
 
-     <LoginForm/>
+     {/* <LoginForm/> */}
+     <UseefctComp/>
     
      {/* <FormComp/> */}
     </div>
