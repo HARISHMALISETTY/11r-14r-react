@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import "./index.css";
 import MyVerticallyCenteredModal from "./modalComp";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const [modalShow, setModalShow] = useState(false);
@@ -21,6 +22,8 @@ export default function LoginForm() {
       };
     });
   };
+
+  const navigate=useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -31,7 +34,9 @@ export default function LoginForm() {
     })
       .then((res) => res.json())
       .then((res) => {
-        res.accessToken ? setResponse(true) : setResponse(false);
+        // res.accessToken ? setResponse(true) : setResponse(false);
+
+        res.accessToken?navigate("/welcome"):navigate("*")
         setModalShow(true);
       });
   };

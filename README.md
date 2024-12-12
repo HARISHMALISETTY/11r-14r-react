@@ -115,6 +115,7 @@ examples for the hooks:
 6.useCallback
 7.useContext
 8.custom hooks
+9.usenavigate
 
 hook can be replica for the constructor and state/setstate in class bases cmps.
 
@@ -129,7 +130,7 @@ hook will returns always an array.
 
 syntax:
 -------
-[intialisevalue or currentstate,updatefunction]=useState(value with any data type)
+[ currentstate,updatefunction]=useState(value with any data type)
 
 to update the currentstate, we have to use updatefunction.
 
@@ -220,3 +221,20 @@ whenever a props or states changes.
 3.useEffect(()=>{},[state])//it will executes whenever that dependent state is updated.
 // componentdidupdate
 
+
+
+Routing:
+--------
+Routing is a mechanism in reactjs which can be navigate b/w the different views/components within the single page.
+
+Most popular library used for achieving routing in react is 
+
+react-router-dom.
+
+
+required components for implementing routing is
+
+1.browserrouter
+2.route
+3.link
+4.routes.
