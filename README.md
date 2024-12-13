@@ -238,3 +238,10 @@ required components for implementing routing is
 2.route
 3.link
 4.routes.
+
+
+useparams hook is used to access dynamic parameters in the URL.
+it allows us to retrieve the values of these parameters and use them in our respective component, which is specially useful for rendering dynamic content based on the url.
+
+
+useParams hook will always returns string.

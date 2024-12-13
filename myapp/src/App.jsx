@@ -15,6 +15,8 @@ import PageNotFound from "./uiContent/functionalComps/Routingcomps/pagenotfound"
 import ContactUs from "./uiContent/functionalComps/Routingcomps/contact";
 import LoginForm from "./uiContent/functionalComps/loginComp";
 import Welcome from "./uiContent/functionalComps/Routingcomps/welcome";
+import MovieList from "./uiContent/dynamicrouting/movieList";
+import MovieDetails from "./uiContent/dynamicrouting/movieDetails";
 
 function App() {
   return (
@@ -44,7 +46,7 @@ function App() {
           <Route path="*" element={<Mounting/>}/>
         </Routes>
       </Router> */}
-
+{/* 
       <Router>
         <div
           style={{
@@ -64,7 +66,7 @@ function App() {
         </div>
 
         <Routes>
-          {/* during invalid routing */}
+          
 
           <Route path="*" element={<PageNotFound/>}></Route>          
           <Route path="/login" element={<LoginForm/>}></Route>
@@ -76,7 +78,30 @@ function App() {
 
 
         </Routes>
+      </Router> */}
+
+      <Router>
+
+        <div style={{display:"flex",justifyContent:"space-around"}}>
+          
+        <Link to="/home">Home</Link>
+        <Link to="/movies">Products</Link>
+  </div>
+
+        
+        <Routes>
+
+          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/movies" element={<MovieList/>}></Route>
+          <Route path="/movies/:id" element={<MovieDetails/>}></Route>
+        </Routes>
+
+
       </Router>
+
+
+
+
     </div>
   );
 }
