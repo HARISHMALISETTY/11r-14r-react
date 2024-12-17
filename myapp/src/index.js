@@ -224,7 +224,7 @@ const products = [
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
 
 {/* <Todo/> */}
     {/* <SampleForm/> */}
@@ -240,7 +240,7 @@ root.render(
     <Accordian title={products[1].title}  info={products[1].description}/> */}
     {/* {products.map((a,b)=>{return ( <Accordian title={a.title} img={a.image} desc={a.description}/>)})} */}
    {/* {products.map((a,b)=>{return (<Accordian title={a.title} info={a.description}/>)})} */}
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -17,6 +17,8 @@ import LoginForm from "./uiContent/functionalComps/loginComp";
 import Welcome from "./uiContent/functionalComps/Routingcomps/welcome";
 import MovieList from "./uiContent/dynamicrouting/movieList";
 import MovieDetails from "./uiContent/dynamicrouting/movieDetails";
+import MemoHook from "./uiContent/hooks/memohook";
+import ParentCall from "./uiContent/hooks/callbckhook";
 
 function App() {
   return (
@@ -46,8 +48,8 @@ function App() {
           <Route path="*" element={<Mounting/>}/>
         </Routes>
       </Router> */}
-{/* 
-      <Router>
+
+      {/* <Router>
         <div
           style={{
             backgroundColor: "orange",
@@ -80,7 +82,7 @@ function App() {
         </Routes>
       </Router> */}
 
-      <Router>
+      {/* <Router>
 
         <div style={{display:"flex",justifyContent:"space-around"}}>
           
@@ -97,9 +99,11 @@ function App() {
         </Routes>
 
 
-      </Router>
+      </Router> */}
 
+      {/* <MemoHook/> */}
 
+<ParentCall/>
 
 
     </div>

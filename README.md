@@ -245,3 +245,26 @@ it allows us to retrieve the values of these parameters and use them in our resp
 
 
 useParams hook will always returns string.
+
+optimizing techniques in react app:
+----------------------------------
+1.pure component--
+        it prevents unnecessary re-rendering of the component by doing a shallow comparision of props and states.
+
+        it will call automatically shouldcomponentupdate to avoid re-renders
+        when props and states haven't changes.
+
+2.usememo hook
+                it will memoize the computation/calculations, recomputes only
+                if its dependencies changes.
+
+                prevents expensive calculations from running on every render unless the dependencies changes.
+
+3.usecallback hook
+        memoize the callback function,recreating it only when the 
+        dependency changes.
+
+
+        ensures that functions maintain the same referrence accross
+        renders,which can help unnecessary re-renders of child components that rely on reference equality.
+

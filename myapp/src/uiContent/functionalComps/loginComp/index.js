@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 // import "./index.css";
 import MyVerticallyCenteredModal from "./modalComp";
 import { useNavigate } from "react-router-dom";
@@ -40,6 +40,16 @@ export default function LoginForm() {
         setModalShow(true);
       });
   };
+  useEffect(()=>{
+      console.log("mounted-login component")
+    },[])
+  
+    useEffect(()=>{
+      return ()=>{
+        console.log("unmounted-login component")
+      }
+  
+    })
 
   return (
     <div>
