@@ -19,10 +19,12 @@ import MovieList from "./uiContent/dynamicrouting/movieList";
 import MovieDetails from "./uiContent/dynamicrouting/movieDetails";
 import MemoHook from "./uiContent/hooks/memohook";
 import ParentCall from "./uiContent/hooks/callbckhook";
-
+import ParenComp from "./uiContent/ccntextHook/parenComp";
+import FormValid from "./uiContent/customHooks/formValid";
 function App() {
   return (
     <div className="App">
+
       {/* <Mounting color="orange"/> */}
       {/* <UpdatingPhase color="yellow"/> */}
       {/* <FuncLifeCycle/> */}
@@ -103,7 +105,10 @@ function App() {
 
       {/* <MemoHook/> */}
 
-<ParentCall/>
+{/* <ParentCall/> */}
+{/* <ParenComp/> */}
+
+<FormValid/>
 
 
     </div>

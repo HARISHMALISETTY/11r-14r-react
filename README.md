@@ -268,3 +268,51 @@ optimizing techniques in react app:
         ensures that functions maintain the same referrence accross
         renders,which can help unnecessary re-renders of child components that rely on reference equality.
 
+
+
+benifits of using contextapi:
+----------------------------
+1.global state managaement
+        it allows us to create global variables that van be shared accross the
+        component tree, making it easier to manage state that affects many components.
+
+2.avoid prop-drilling
+        it can avoid prop-drilling,where we pass props through multiple layers of components
+        unnecessarily.
+
+3.simplified code
+        by providing central place for shared state,it simplifies the code and reduces
+        the complexity of state management.
+
+4.improved readability
+        improves the readibility of code by clearly seperating the shared state logic
+        from component logic.
+
+
+steps to use usecontext api:
+-------------------------
+1.identify the data that needs to be shared
+2.use the createContext method from react.
+3.wrap the provider with create context (set of components that needs to be shared)
+4.pass the value attribute to the provider, and give data to the value(data needs to share).
+5.identify the component to use the data,use useContext hook to consume the data.
+
+
+
+custom hooks :
+-------------
+hooks with customized logic and defined by developer are custom hooks.
+custom hooks are reusable functions that allow us to extract and reuse logic in our react
+application.
+
+
+HOC
+protected routes
+
+
+usereducer--this will discuss before redux.
+
+
+nodejs-phase2
+
+
