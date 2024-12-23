@@ -20,7 +20,8 @@ import MovieDetails from "./uiContent/dynamicrouting/movieDetails";
 import MemoHook from "./uiContent/hooks/memohook";
 import ParentCall from "./uiContent/hooks/callbckhook";
 import ParenComp from "./uiContent/ccntextHook/parenComp";
-import FormValid from "./uiContent/customHooks/formValid";
+// import FormValid from "./uiContent/customHooks/formValid";
+import AddProduct from "./uiContent/productDetails/addProduct";
 function App() {
   return (
     <div className="App">
@@ -106,8 +107,8 @@ function App() {
       {/* <MemoHook/> */}
 
 {/* <ParentCall/> */}
-<ParenComp/>
-
+{/* <ParenComp/> */}
+<AddProduct/>
 {/* <FormValid/> */}
 
 
