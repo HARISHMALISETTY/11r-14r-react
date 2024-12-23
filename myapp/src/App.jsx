@@ -106,9 +106,9 @@ function App() {
       {/* <MemoHook/> */}
 
 {/* <ParentCall/> */}
-{/* <ParenComp/> */}
+<ParenComp/>
 
-<FormValid/>
+{/* <FormValid/> */}
 
 
     </div>
