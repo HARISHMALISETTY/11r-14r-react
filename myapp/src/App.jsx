@@ -22,6 +22,7 @@ import ParentCall from "./uiContent/hooks/callbckhook";
 import ParenComp from "./uiContent/ccntextHook/parenComp";
 // import FormValid from "./uiContent/customHooks/formValid";
 import AddProduct from "./uiContent/productDetails/addProduct";
+import CircleComp from "./uiContent/circleComp";
 function App() {
   return (
     <div className="App">
@@ -108,8 +109,9 @@ function App() {
 
 {/* <ParentCall/> */}
 {/* <ParenComp/> */}
-<AddProduct/>
+{/* <AddProduct/> */}
 {/* <FormValid/> */}
+<CircleComp/>
 
 
     </div>
