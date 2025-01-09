@@ -316,3 +316,73 @@ usereducer--this will discuss before redux.
 nodejs-phase2
 
 
+
+
+redux:--->
+
+it is a third party package which is used to manage state globally.
+
+we will use redux for large scale applications.
+
+we can use redux in any kind of js libraries/frameworks.
+
+like angular,vue ..,
+
+
+react-redux is a combination we use in our react application.
+
+we need to install redux and react-redux also.
+
+
+
+Actions---action raise
+
+Reducers----this is nothing but a pure function which will implement logical part as per action.
+
+store--this will update the state according to the user action
+
+as per the state updation in a store, particular UI will be re-rendered.
+
+
+
+whenever an user made an action from ui...action file will trigger and then that action
+will dispatch to the reducer. and in that reducer, logical part will be implements.
+so as the reducers involved in the store, reducers will make to update the states in the stores.
+when store get updated,then state will be selected through the useselector.
+and then implement it in respected component.
+
+
+
+
+selectors,dispatch.
+
+
+action is an object in redux,contains mainly type and payload
+
+
+{
+
+        type:"add_to_cart",
+        payload:"chair"
+}
+
+
+reducers:
+-----------
+switch(action.type){
+
+        case "add_to_cart":()
+=>{
+
+}
+break;
+
+case "remove_cart":()=>{
+
+}
+break;
+
+}
+
+
+

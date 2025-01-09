@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function CircleComp() {
   const [circles, setCircles] = useState([]);
-  const [isIntersect,setIsIntersect]=useState(false)
+  const [isIntersect, setIsIntersect] = useState(false);
 
   const handleClick = (e) => {
     const radius = Math.floor(Math.random() * 181 + 20); // researched to get random radius in b/w 20px and 200px
@@ -12,7 +12,7 @@ export default function CircleComp() {
 
     if (newCircles.length > 2) {
       setCircles([]);
-      setIsIntersect(false)
+      setIsIntersect(false);
     } else {
       setCircles(newCircles);
 
@@ -24,17 +24,16 @@ export default function CircleComp() {
         const dy = circle2.y - circle1.y;
 
         const distance = Math.sqrt(dx ** 2 + dy ** 2); // researched how to find the distance b/w the two circles.
-        const radiusSum = circle1.radius + circle2.radius; 
+        const radiusSum = circle1.radius + circle2.radius;
         // if distance is < (c1.radius+c2.radius),then they both are intersected.-- researched about this.
-        
 
         // Check if circles intersect
-        if (distance <radiusSum) {
+        if (distance < radiusSum) {
           console.log("The circles intersect");
-          setIsIntersect(true)
+          setIsIntersect(true);
         } else {
           console.log("The circles do not intersect");
-          setIsIntersect(false)
+          setIsIntersect(false);
         }
       }
     }
@@ -44,7 +43,12 @@ export default function CircleComp() {
     <div>
       <div
         onClick={handleClick}
-        style={{ height: "100vh", width: "100vw", position: "relative",backgroundColor:isIntersect?"red":"white" }}
+        style={{
+          height: "100vh",
+          width: "100vw",
+          position: "relative",
+          backgroundColor: isIntersect ? "red" : "white",
+        }}
       >
         {circles.map((a, index) => (
           <div
