@@ -1,18 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Sample from  './SampleComp';
-import Home from './home/homeComp';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Accordian from './uiContent/bs-accordian/accordianComp';
-import Main from './main/mainComp';
-import Parent from './uiContent/Parentcomp/parentComp';
-import Counter from './uiContent/counter/counter';
-import Toggle from './uiContent/toggleSwitch/toggleSwitch';
-import SampleForm from './uiContent/sampleForm/sampleForm';
-import Todo from "./uiContent/todo/index.js"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Sample from "./SampleComp";
+import Home from "./home/homeComp";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Accordian from "./uiContent/bs-accordian/accordianComp";
+import Main from "./main/mainComp";
+import Parent from "./uiContent/Parentcomp/parentComp";
+import Counter from "./uiContent/counter/counter";
+import Toggle from "./uiContent/toggleSwitch/toggleSwitch";
+import SampleForm from "./uiContent/sampleForm/sampleForm";
+import Todo from "./uiContent/todo/index.js";
+import { Provider } from "react-redux";
+import store from "./redux/store.js";
+
 const products = [
   {
     id: 1,
@@ -222,24 +225,26 @@ const products = [
   },
 ];
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-
-{/* <Todo/> */}
+    {/* <Todo/> */}
     {/* <SampleForm/> */}
     {/* <Toggle/> */}
 
     {/* <Counter/> */}
     {/* <Main/> */}
     {/* <Parent login="admin"/> */}
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
+
     {/* <Sample/> */}
     {/* <Home/> */}
     {/* <Accordian title={products[0].title}  info={products[0].description}/>
     <Accordian title={products[1].title}  info={products[1].description}/> */}
     {/* {products.map((a,b)=>{return ( <Accordian title={a.title} img={a.image} desc={a.description}/>)})} */}
-   {/* {products.map((a,b)=>{return (<Accordian title={a.title} info={a.description}/>)})} */}
+    {/* {products.map((a,b)=>{return (<Accordian title={a.title} info={a.description}/>)})} */}
   </>
 );
 

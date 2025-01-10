@@ -23,9 +23,13 @@ import ParenComp from "./uiContent/ccntextHook/parenComp";
 // import FormValid from "./uiContent/customHooks/formValid";
 import AddProduct from "./uiContent/productDetails/addProduct";
 import CircleComp from "./uiContent/circleComp";
+import CounterControls from "./uiContent/reduxComponents/counterControls";
+import CounterDisplay from "./uiContent/reduxComponents/counterDisplay";
 function App() {
   return (
     <div className="App">
+      <CounterControls/>
+      <CounterDisplay/>
 
       {/* <Mounting color="orange"/> */}
       {/* <UpdatingPhase color="yellow"/> */}
@@ -111,7 +115,7 @@ function App() {
 {/* <ParenComp/> */}
 {/* <AddProduct/> */}
 {/* <FormValid/> */}
-<CircleComp/>
+{/* <CircleComp/> */}
 
 
     </div>
