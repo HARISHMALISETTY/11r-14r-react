@@ -1,5 +1,5 @@
 import { count } from "firebase/firestore";
-import { INCREMENT, DECREMENT } from "../actions/action";
+import { INCREMENT, DECREMENT, INCBYFIVE, DECBYFIVE } from "../actions/action";
 
 const intialState = {
   count: 0,
@@ -12,6 +12,12 @@ const CounterReducer = (state = intialState, action) => {
 
     case DECREMENT:
       return { ...state, count: state.count - 1 };
+
+    case INCBYFIVE:
+      return { ...state, count: state.count + action.payload };
+
+    case DECBYFIVE:
+      return { ...state, count: state.count - action.payload };
 
     default:
       return state;
